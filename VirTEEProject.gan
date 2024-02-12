@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="VirTEE Roadmap 2023-24" company="VirTEE" webLink="http://virtee.io" view-date="2023-09-01" view-index="0" gantt-divider-location="397" resource-divider-location="300" version="2.8.10" locale="en">
+<?xml version="1.0" encoding="UTF-8"?><project name="VirTEE Roadmap 2023-24" company="VirTEE" webLink="http://virtee.io" view-date="2023-09-24" view-index="0" gantt-divider-location="541" resource-divider-location="300" version="2.8.10" locale="en">
     <description/>
-    <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Name" width="237" order="0"/>
-        <field id="tpd4" name="Begin date" width="64" order="1"/>
-        <field id="tpd5" name="End date" width="92" order="2"/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="285" order="0"/>
+        <field id="tpd4" name="Begin date" width="112" order="1"/>
+        <field id="tpd5" name="End date" width="140" order="2"/>
         <option id="taskLabelUp" value=""/>
         <option id="taskLabelLeft" value="name"/>
-        <option id="color.recent"><![CDATA[#00cc66 #ff3333 #0033ff #ff9933 #3333ff #e1e1e1 #99ff99]]></option>
+        <option id="color.recent"><![CDATA[#00cc66 #ffffcc #e1e1e1 #ff3333 #3333ff #0033ff #ff9933 #99ff99]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -162,66 +162,80 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="16" name="sev 2.0.0" color="#ff3333" meeting="true" start="2023-11-03" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="sev 2.0.2" color="#ff3333" meeting="true" start="2023-11-03" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
         <task id="42" name="snpguest 0.3.0" color="#8cb6ce" meeting="true" start="2023-11-03" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
         <task id="52" name="snphost 0.2.0" color="#00cc66" meeting="true" start="2023-11-03" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
         <task id="70" name="sevctl 0.5.0" color="#ff9933" meeting="true" start="2023-11-03" duration="0" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true"/>
-        <task id="0" name="Guest Measurement" color="#3333ff" meeting="false" start="2023-10-09" duration="36" complete="80" thirdDate="2023-11-02" thirdDate-constraint="0" expand="true">
-            <task id="26" name="library-support" color="#ff3333" meeting="false" start="2023-10-09" duration="24" complete="100" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-            <task id="32" name="snpguest-support" color="#8cb6ce" meeting="false" start="2023-11-20" duration="6" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Guest Measurement" color="#3333ff" meeting="false" start="2023-10-09" duration="98" complete="78" thirdDate="2023-11-02" thirdDate-constraint="0" expand="true">
+            <task id="26" name="library-support" color="#ff3333" meeting="false" start="2023-10-09" duration="22" complete="100" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+            <task id="32" name="snpguest-support" color="#8cb6ce" meeting="false" start="2024-02-16" duration="6" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="19" name="sev 2.1.0" color="#ff3333" meeting="true" start="2023-11-10" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="36" name="Identity Block" meeting="false" start="2023-10-23" duration="36" complete="20" expand="true">
-            <task id="38" name="id-block lib" color="#ff3333" meeting="false" start="2023-10-23" duration="24" complete="30" thirdDate="2023-11-02" thirdDate-constraint="0" expand="true"/>
-            <task id="39" name="snpguest-support" color="#8cb6ce" meeting="false" start="2023-11-27" duration="11" complete="0" thirdDate="2023-10-02" thirdDate-constraint="0" expand="true"/>
+        <task id="36" name="Identity Block" color="#3333ff" meeting="false" start="2023-10-23" duration="99" complete="87" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+            <task id="38" name="id-block lib" color="#ff3333" meeting="false" start="2023-10-23" duration="88" complete="98" thirdDate="2023-11-02" thirdDate-constraint="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" name="snpguest-support" color="#8cb6ce" meeting="false" start="2024-02-26" duration="11" complete="0" thirdDate="2023-10-02" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="22" name="sev 2.2.0" color="#ff3333" meeting="true" start="2023-11-24" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="54" name="snpguest 0.4.0" color="#8cb6ce" meeting="true" start="2023-12-15" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="57" name="VLEK" color="#3333ff" meeting="false" start="2024-01-08" duration="15" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
-            <task id="60" name="library-support" color="#ff3333" meeting="false" start="2024-01-08" duration="5" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+        <task id="113" name="Kernel 6.6+ IOCTLs" color="#3333ff" meeting="false" start="2024-01-08" duration="30" complete="97" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+            <task id="115" name="library-changes" color="#ff3333" meeting="false" start="2024-01-08" duration="25" complete="100" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Add support for VLEK in enumerated fields for types.]]></notes>
+                <depend id="117" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="117" name="snphost-changes" color="#00cc66" meeting="false" start="2024-02-12" duration="5" complete="83" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Support validation on host-side tooling.
+- Serialization of the VLEK (may or may not be in the library)]]></notes>
+            </task>
+        </task>
+        <task id="57" name="VLEK" color="#3333ff" meeting="false" start="2024-02-05" duration="16" complete="37" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+            <task id="60" name="library-support" color="#ff3333" meeting="false" start="2024-02-05" duration="6" complete="100" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
                 <notes><![CDATA[- Add support for VLEK in enumerated fields for types.]]></notes>
                 <depend id="62" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="62" name="snphost-support" color="#00cc66" meeting="false" start="2024-01-15" duration="5" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+            <task id="62" name="snphost-support" color="#00cc66" meeting="false" start="2024-02-13" duration="5" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
                 <notes><![CDATA[- Support validation on host-side tooling.
 - Serialization of the VLEK (may or may not be in the library)]]></notes>
                 <depend id="64" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="64" name="snpguest-support" color="#8cb6ce" meeting="false" start="2024-01-22" duration="5" complete="0" thirdDate="2024-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="64" name="snpguest-support" color="#8cb6ce" meeting="false" start="2024-02-20" duration="5" complete="0" thirdDate="2024-01-22" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="68" name="Firmware Error Wrapping" color="#ff3333" meeting="false" start="2024-01-29" duration="5" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="97" name="snpguest 0.5.0" color="#8cb6ce" meeting="true" start="2024-02-05" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="100" name="snphost 0.3.0" color="#00cc66" meeting="true" start="2024-02-05" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="93" name="sev 2.3.0" color="#ff3333" meeting="true" start="2024-02-05" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="75" name="CI/CD" color="#0033ff" meeting="false" start="2024-02-05" duration="18" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
-            <task id="78" name="sev" color="#ff3333" meeting="false" start="2024-02-05" duration="6" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
+        <task id="138" name="Comprehensive Enablement Testing" color="#3333ff" meeting="false" start="2024-02-05" duration="11" complete="16" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+            <task id="140" name="snphost-changes" color="#00cc66" meeting="false" start="2024-02-05" duration="6" complete="30" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Add support for VLEK in enumerated fields for types.]]></notes>
+                <depend id="142" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="142" name="snpguest-changes" color="#8cb6ce" meeting="false" start="2024-02-13" duration="5" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Support validation on host-side tooling.
+- Serialization of the VLEK (may or may not be in the library)]]></notes>
+            </task>
+        </task>
+        <task id="68" name="Firmware Error Wrapping" color="#ff3333" meeting="false" start="2024-02-22" duration="3" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="97" name="snpguest 0.5.0" color="#8cb6ce" meeting="true" start="2024-02-26" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="100" name="snphost 1.0.0" color="#00cc66" meeting="true" start="2024-02-26" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="93" name="sev 3.0.0" color="#ff3333" meeting="true" start="2024-02-26" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+        <task id="75" name="CI/CD" color="#0033ff" meeting="false" start="2024-03-04" duration="17" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
+            <task id="78" name="sev" color="#ff3333" meeting="false" start="2024-03-04" duration="6" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
                 <depend id="81" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="81" name="snpguest" color="#8cb6ce" meeting="false" start="2024-02-13" duration="6" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
+            <task id="81" name="snpguest" color="#8cb6ce" meeting="false" start="2024-03-12" duration="6" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
                 <depend id="84" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="84" name="snphost" color="#00cc66" meeting="false" start="2024-02-21" duration="6" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true"/>
+            <task id="84" name="snphost" color="#00cc66" meeting="false" start="2024-03-20" duration="5" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="65" name="gmem refactor" color="#ff3333" meeting="false" start="2024-01-22" duration="28" complete="0" thirdDate="2024-01-22" thirdDate-constraint="1" expand="true">
-            <notes><![CDATA[Still waiting on gmem to go upstream linux.]]></notes>
-            <depend id="107" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="107" name="snpguest 0.6.0" color="#8cb6ce" meeting="true" start="2024-02-29" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
-            <depend id="109" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="109" name="snphost 0.4.0" color="#00cc66" meeting="true" start="2024-02-29" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
-            <depend id="111" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="111" name="sev 2.4.0" color="#ff3333" meeting="true" start="2024-02-29" duration="0" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
-        <task id="94" name="Extended Guest Refactor" color="#00cc66" meeting="false" start="2024-02-29" duration="16" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" expand="true">
-            <notes><![CDATA[Wainting for changes to go upstream]]></notes>
-        </task>
-        <task id="71" name="configfs-tsm" color="#8cb6ce" meeting="false" start="2024-02-29" duration="32" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" expand="true">
+        <task id="71" name="configfs-tsm" color="#ffffcc" meeting="false" start="2024-02-29" duration="32" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" expand="true">
             <notes><![CDATA[- Linux changes to go upstream (in linux-next currently 2023-03-11)
 - Create new crate / sub-crate?
 - splitting tooling]]></notes>
         </task>
-        <task id="72" name="Firmware Update" color="#00cc66" meeting="false" start="2024-02-29" duration="15" complete="0" thirdDate="2023-08-01" thirdDate-constraint="0" expand="true"/>
+        <task id="72" name="Firmware Update" color="#ffffcc" meeting="false" start="2024-02-29" duration="15" complete="0" thirdDate="2023-08-01" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Add in support for manually updating firmware on a system.
+- Check if firmware download present.
+- If present, supply warning, and skip downloading without force flag.
+- If not, download the latest firmware from the AMD developer website.
+- Unpack and move the file into /lib/firmware/amd/
+- Symlink to the unpacked file.]]></notes>
+        </task>
+        <task id="136" name="gmem-refactor" color="#ffffcc" meeting="false" start="2024-03-18" duration="10" complete="0" thirdDate="2024-01-02" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
